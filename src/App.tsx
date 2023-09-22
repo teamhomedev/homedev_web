@@ -22,7 +22,7 @@ function AppShell({children}: PropsWithChildren) {
 
     useEffect(() => {
         let path = localStorage.getItem('path');
-        if(path) {
+        if (path) {
             localStorage.removeItem('path');
             navigate(path);
         }

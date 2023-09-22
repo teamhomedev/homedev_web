@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "cleanup": "rimraf ./docs",
-    "build": "npm run cleanup; webpack --mode=production; cp ./src/404.html ./docs; touch ./docs/.nojekyll",
+    "build": "webpack --mode=production",
     "start": "webpack serve"
   },
   "dependencies": {
