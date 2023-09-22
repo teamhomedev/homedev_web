@@ -12,6 +12,8 @@ export function App() {
             localStorage.removeItem('path');
             navigate(path);
         }
+
+        console.log('test')
     }, []);
 
     return (
@@ -21,6 +23,7 @@ export function App() {
                     <Route path="/" element={<Home />} />
 
                     <Route path="/auth/instaget" element={<Auth />} />
+
                 </Routes>
         </BrowserRouter>
     )
