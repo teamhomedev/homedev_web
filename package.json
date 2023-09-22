@@ -1,0 +1,35 @@
+{
+  "name": "web",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cleanup": "rimraf ./docs",
+    "build": "npm run cleanup; webpack --mode=production; touch ./docs/.nojekyll",
+    "start": "webpack serve"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.16.0",
+    "react-router-dom": "^6.16.0"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.22.20",
+    "@babel/preset-react": "^7.22.15",
+    "@babel/preset-typescript": "^7.22.15",
+    "@types/react": "^18.2.22",
+    "@types/react-dom": "^18.2.7",
+    "css-loader": "^6.8.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.3",
+    "rimraf": "^5.0.1",
+    "ts-loader": "^9.4.4",
+    "typescript": "^5.2.2",
+    "typescript-plugin-css-modules": "^5.0.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1"
+  },
+  "author": "Ly Nguyen <contact@minhlynguyenvo.com>",
+  "license": "ISC"
+}
