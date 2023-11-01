@@ -3,6 +3,7 @@ import {BrowserRouter, Routes, Route, useNavigate} from 'react-router-dom';
 import {Home} from "./page/Home";
 import {Auth} from "./page/Auth";
 import {PrivacyPolicy} from "./page/PrivacyPolicy";
+import {Support} from "./page/Support";
 
 export function App() {
     return (
@@ -11,6 +12,7 @@ export function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+                    <Route path="/support" element={<Support />} />
 
                     <Route path="/auth/instaget" element={<Auth />} />
                 </Routes>
